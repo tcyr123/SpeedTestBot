@@ -17,7 +17,6 @@ public class WorkHorse {
    
    
     public static boolean launchTest() throws Exception {
-        try{
         DRIVER.get("https://www.speedtest.net/"); //Launches SpeedTest.net
         Thread.sleep(2000); //wait 2secs
         DRIVER.findElement(By.xpath("//a[contains(@class, 'js-start-test test-mode-multi')]"))
@@ -36,17 +35,13 @@ public class WorkHorse {
         results.setProvider(DRIVER.findElement(By.xpath("//div[contains(@class, 'result-label js-data-isp')]")).getText());
         results.setDateRan(new Date().toString());
         gatherInfo(); //write to txt file for backup/debugging
-        }
-        catch(Exception e)
-        {
-            return false;
-        }
+        
         return true;
     }
     
     public static void gatherInfo() throws IOException
     {
-       FileWriter fileWriter = new FileWriter("D:\\School\\NetBeans\\Side-Projects\\SpeedTestBot2\\outputData\\results.txt", true);
+       FileWriter fileWriter = new FileWriter("D:\\School\\NetBeans\\Side-Projects\\SpeedTestBot2_working\\outputData\\results.txt", true);
        try (PrintWriter printWriter = new PrintWriter(fileWriter)) {
            printWriter.println("----------- SPEEDTEST RESULTS -----------\n");
            printWriter.println("Date: ------------------\t" + results.getDateRan());
@@ -57,7 +52,8 @@ public class WorkHorse {
            printWriter.println("Provider: ------------\t" + results.getProvider() + "\n");
        }
     }
-    
+    //<editor-fold desc="optional">
+    /*
     private static String Conclusion()
     {
         if(Double.valueOf(results.getDownload()) >=90 && Double.valueOf(results.getUpload()) >= 9)
@@ -91,34 +87,46 @@ public class WorkHorse {
         
         return "N/A";
     }
+    */
+    //</editor-fold>
     
-    public static void launchTweet(String un, String pw) throws Exception {
+    public static boolean launchTweet(String un, String pw) throws Exception {
         DRIVER.get("https://twitter.com/"); //Launch Twitter
-        Thread.sleep(2000); //wait 2secs
-        DRIVER.findElement(By.xpath("//input[contains(@name, 'session[username_or_email]')]"))
-                .sendKeys(un); //Insert username saved from index
+        Thread.sleep(4000); //wait 4secs
+        
+        String usernameLogin ="//input[contains(@name, 'session[username_or_email]')]";
+        //only attempt login if required (might already be logged in)
+        if(DRIVER.findElements(By.xpath(usernameLogin)).size() > 0){
+            DRIVER.findElement(By.xpath(usernameLogin))
+                    .sendKeys(un); //Insert username saved from index
         DRIVER.findElement(By.xpath("//input[contains(@name, 'session[password]')]"))
                 .sendKeys(pw); //Insert password saved from index
         DRIVER.findElement(By.xpath("//span[contains(text(), 'Log in')]"))
                 .click(); //Login
         Thread.sleep(3000); //wait 3secs 
+        }
         
         
         String tweet = "Date:    " + results.getDateRan() + Keys.chord(Keys.SHIFT ,Keys.ENTER)
                     + "Download: " + results.getDownload() + Keys.chord(Keys.SHIFT ,Keys.ENTER)
                     + "Upload:   " + results.getUpload() + Keys.chord(Keys.SHIFT ,Keys.ENTER)
                     + "Ping:     " + results.getPing() + Keys.chord(Keys.SHIFT ,Keys.ENTER)
-                    + "Server:   " + results.getServer() + Keys.chord(Keys.SHIFT ,Keys.ENTER)
-                    + "Conclusion: " + Conclusion();
-        
-        DRIVER.findElement(By.xpath("/html/body/div/div/div/div/main/div/div/div/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div[1]/div[1]/div/div/div/div[2]/div/div/div/div"))
+                    + "Server:   " + results.getServer();// + Keys.chord(Keys.SHIFT ,Keys.ENTER)
+                    //+ "Conclusion: " + Conclusion();
+        DRIVER.findElement(By.xpath("//a[contains(@aria-label, 'Tweet')]")); //click compose tweet button
+        DRIVER.findElement(By.xpath("//div[contains(@class, 'notranslate public-DraftEditor-content')]"))
                 .sendKeys(tweet); //Type tweet
-//        DRIVER.findElement(By.xpath("/html/body/div/div/div/div/main/div/div/div/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div[2]/div[3]"))
-//                .click(); //Publish tweet
+        DRIVER.findElement(By.xpath("//div[contains(@data-testid, 'tweetButton')]"))
+                .click(); //Publish tweet
+        
+
+    return true;
     } 
+    
     
     public static void stop()
     {
+        Thread.currentThread().interrupt();
         DRIVER.quit();
     }
     

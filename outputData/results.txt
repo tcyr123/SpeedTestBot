@@ -123,31 +123,174 @@ Download: ----------	108.15
 Upload:  --------------	4.24
 Server: ---------------	Southern Light, LLC
 Provider: ------------	Suddenlink
-
 ----------- SPEEDTEST RESULTS -----------
 
-Date: ------------------	Mon Mar 02 15:56:53 CST 2020
+Date: ------------------	Mon Mar 02 19:16:45 CST 2020
 Ping: ------------------	35
-Download: ----------	70.45
-Upload:  --------------	3.66
-Server: ---------------	Cox - New Orleans
+Download: ----------	104.44
+Upload:  --------------	2.14
+Server: ---------------	Cox - Baton Rouge
 Provider: ------------	Suddenlink
 
 ----------- SPEEDTEST RESULTS -----------
 
-Date: ------------------	Mon Mar 02 15:59:28 CST 2020
-Ping: ------------------	32
-Download: ----------	108.15
-Upload:  --------------	5.17
+Date: ------------------	Mon Mar 02 19:22:35 CST 2020
+Ping: ------------------	34
+Download: ----------	104.00
+Upload:  --------------	3.08
 Server: ---------------	Suddenlink Communications LLC
 Provider: ------------	Suddenlink
 
 ----------- SPEEDTEST RESULTS -----------
 
-Date: ------------------	Mon Mar 02 16:11:11 CST 2020
-Ping: ------------------	30
-Download: ----------	108.25
-Upload:  --------------	3.71
+Date: ------------------	Mon Mar 02 19:24:54 CST 2020
+Ping: ------------------	34
+Download: ----------	103.97
+Upload:  --------------	4.26
+Server: ---------------	Suddenlink Communications LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 19:27:07 CST 2020
+Ping: ------------------	33
+Download: ----------	105.22
+Upload:  --------------	3.37
+Server: ---------------	Suddenlink Communications LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 19:29:20 CST 2020
+Ping: ------------------	33
+Download: ----------	103.80
+Upload:  --------------	3.62
+Server: ---------------	Cox - Baton Rouge
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 19:31:34 CST 2020
+Ping: ------------------	34
+Download: ----------	103.45
+Upload:  --------------	2.35
+Server: ---------------	Cox - New Orleans
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 19:37:33 CST 2020
+Ping: ------------------	33
+Download: ----------	105.17
+Upload:  --------------	4.10
+Server: ---------------	Suddenlink Communications LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:06:23 CST 2020
+Ping: ------------------	36
+Download: ----------	104.09
+Upload:  --------------	1.58
+Server: ---------------	Southern Light, LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:08:45 CST 2020
+Ping: ------------------	33
+Download: ----------	102.67
+Upload:  --------------	1.67
+Server: ---------------	Suddenlink Communications LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:19:09 CST 2020
+Ping: ------------------	36
+Download: ----------	102.75
+Upload:  --------------	1.05
+Server: ---------------	Southern Light, LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:22:52 CST 2020
+Ping: ------------------	34
+Download: ----------	101.70
+Upload:  --------------	1.82
+Server: ---------------	Cox - New Orleans
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:27:10 CST 2020
+Ping: ------------------	32
+Download: ----------	102.87
+Upload:  --------------	1.73
+Server: ---------------	Suddenlink Communications LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:29:04 CST 2020
+Ping: ------------------	32
+Download: ----------	101.47
+Upload:  --------------	2.77
+Server: ---------------	Suddenlink Communications LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:32:22 CST 2020
+Ping: ------------------	33
+Download: ----------	102.72
+Upload:  --------------	2.69
+Server: ---------------	Cox - Baton Rouge
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:34:22 CST 2020
+Ping: ------------------	32
+Download: ----------	103.78
+Upload:  --------------	1.99
+Server: ---------------	Suddenlink Communications LLC
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:35:36 CST 2020
+Ping: ------------------	32
+Download: ----------	104.76
+Upload:  --------------	2.29
+Server: ---------------	Cox - Baton Rouge
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:39:49 CST 2020
+Ping: ------------------	34
+Download: ----------	103.68
+Upload:  --------------	2.94
+Server: ---------------	Cox - Baton Rouge
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:46:09 CST 2020
+Ping: ------------------	34
+Download: ----------	102.05
+Upload:  --------------	2.91
+Server: ---------------	Cox - New Orleans
+Provider: ------------	Suddenlink
+
+----------- SPEEDTEST RESULTS -----------
+
+Date: ------------------	Mon Mar 02 20:52:23 CST 2020
+Ping: ------------------	31
+Download: ----------	102.42
+Upload:  --------------	3.51
 Server: ---------------	Suddenlink Communications LLC
 Provider: ------------	Suddenlink
 
