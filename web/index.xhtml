@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>SpeedTest Bot</title>
+    </h:head>
+    <h:body>
+    <h2>Twitter Login Credentials</h2>
+    <h:form>
+        <h:panelGrid columns="2">
+            <h:outputLabel value="Username, email, or phone#">
+                <h:inputText label="Username, email, or phone#" id="firstName" value="#{accessBean.username}">
+                    <f:validateRequired />
+                </h:inputText>
+            </h:outputLabel>
+            <h:message for="firstName" style="color:red" />
+
+            <h:outputLabel value="Password: ">
+                <h:inputSecret label="Password" id="Password" value="#{accessBean.password}" required="true"/>
+            </h:outputLabel>
+            <h:message for="Password" style="color:red" />
+        </h:panelGrid>
+        <h:commandButton value="Launch Bot" action="#{accessBean.launch()}"/>
+        <h:commandButton value="Stop" action="#{accessBean.stop()}" />
+        </h:form>
+    </h:body>
+</html>
+
